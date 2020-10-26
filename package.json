@@ -1,0 +1,19 @@
+{
+  "name": "etherscan-publisher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samlior/etherscan-publisher.git"
+  },
+  "author": "samlior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samlior/etherscan-publisher/issues"
+  },
+  "homepage": "https://github.com/samlior/etherscan-publisher#readme"
+}
