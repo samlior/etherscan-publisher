@@ -94,8 +94,8 @@ if (argv.proxy) {
     })
 }
 
-let argtypes = argv.argtypes.split(',')
-let argvalues = argv.argvalues.split(',')
+let argtypes = argv.argtypes === '' ? [] : argv.argtypes.split(',')
+let argvalues = argv.argvalues === '' ? [] : argv.argvalues.split(',')
 if (argtypes.length !== argvalues.length) {
     logger.error('invalid argtypes or argvalues, length not match')
     process.exit(1)
