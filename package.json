@@ -2,10 +2,9 @@
   "name": "etherscan-publisher",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "etherscan-publisher.js",
   "scripts": {
-    "start": "node -r ts-node/register etherscan-publisher.ts",
-    "build": "tsc --build tsconfig.json"
+    "start": "node etherscan-publisher.js"
   },
   "repository": {
     "type": "git",
@@ -29,5 +28,8 @@
     "typescript": "^4.0.3",
     "web3": "^1.3.0",
     "yargs": "^16.1.0"
+  },
+  "bin": {
+    "epr": "./etherscan-publisher.js"
   }
 }
