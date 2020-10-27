@@ -112,6 +112,15 @@ const func = (compilerversion) => {
         case 'ropsten':
             url = 'https://api-ropsten.etherscan.io/api'
             break
+        case 'kovan':
+            url = 'https://api-kovan.etherscan.io/api';
+            break
+        case 'rinkeby':
+            url = 'https://api-rinkeby.etherscan.io/api';
+            break
+        case 'goerli':
+            url = 'https://api-goerli.etherscan.io/api';
+            break
         default:
             logger.error(`unkonw network type: ${argv.network}`)
             process.exit(1)
