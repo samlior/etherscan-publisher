@@ -29,6 +29,5 @@ truffle-flattener mycontract.sol --output myoutput.sol
 ```
 npm i -g etherscan-publisher
 
-epr --address 0x15649cB44eb918b3edE577450F41191808F87bac --compiler v0.6.2+commit.bacdbe57 --name test123 --path ./myoutput.sol --network ropsten --apikey yourapikey --license MIT --argtypes address,uint256 --argvalues 0x19965F3321Cf4811CF0686546a69216fF04628b0,8 -o 127.0.0.1:1087
-
+epr --address 0x15649cB44eb918b3edE577450F41191808F87bac --compiler v0.6.2 --name test123 --path ./myoutput.sol --network ropsten --apikey yourapikey --license MIT --argtypes address,uint256 --argvalues 0x19965F3321Cf4811CF0686546a69216fF04628b0,8 -o 127.0.0.1:1087
 ```
