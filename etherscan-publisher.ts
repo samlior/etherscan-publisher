@@ -160,7 +160,7 @@ license += 1;
         let guid = data.result
     
         // wait for etherscan.
-        const waitTime = 10;
+        const waitTime = 5;
         while (true) {
             let flag = 0
             for (let i = 0; i < waitTime + 1; i++) {
@@ -201,6 +201,8 @@ license += 1;
             data = response.data
             if (data.status !== '1' || data.message !== 'OK') {
                 if (data.result.indexOf('Pending') !== -1) {
+                    logger.info(`upload successfully, waiting for guid ${guid} retry...`)
+                    await new Promise((r) => setTimeout(r, 1000))
                     continue
                 }
                 logger.error(`checkverifystatus failed, data: ${JSON.stringify(data)}`)
