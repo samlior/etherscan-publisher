@@ -13,25 +13,25 @@ const argv = yargs(process.argv.slice(2)).options({
     'address': {
         alias: 'a',
         demandOption: true,
-        describe: 'address of the contract',
+        describe: 'the address of the contract',
         type: 'string'
     },
     'name': {
         alias: 'n',
         demandOption: true,
-        describe: 'name of the contract',
+        describe: 'the name of the contract',
         type: 'string'
     },
     'compiler': {
         alias: 'c',
         demandOption: true,
-        describe: 'compiler of the contract',
+        describe: 'the compiler of the contract',
         type: 'string'
     },
     'path': {
         alias: 'p',
         demandOption: true,
-        describe: 'path of the contract source code',
+        describe: 'the path of the contract source code',
         type: 'string'
     },
     'apikey': {
