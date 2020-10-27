@@ -31,3 +31,21 @@ npm i -g etherscan-publisher
 
 epr --address 0x15649cB44eb918b3edE577450F41191808F87bac --compiler v0.6.2 --name test123 --path ./myoutput.sol --network ropsten --apikey yourapikey --license MIT --argtypes address,uint256 --argvalues 0x19965F3321Cf4811CF0686546a69216fF04628b0,8 -o 127.0.0.1:1087
 ```
+
+# All supported license
+
+```
+None
+Unlicense
+MIT
+GNU GPLv2
+GNU GPLv3
+GNU LGPLv2.1
+GNU LGPLv3
+BSD-2-Clause
+BSD-3-Clause
+MPL-2.0
+OSL-3.0
+Apache-2.0
+GNU AGPLv3
+```
